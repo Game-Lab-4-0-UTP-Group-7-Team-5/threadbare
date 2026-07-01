@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddejmqqoskt2h"]
+
+[ext_resource type="Script" uid="uid://cmg6eckiapbhb" path="res://KILLAWAR_codigo/plataforma_salto.gd" id="1_ypjiw"]
+[ext_resource type="Texture2D" uid="uid://cp7728g3vfic4" path="res://KILLAWAR_recursos/sprites/platforms.png" id="2_4003a"]
+[ext_resource type="AudioStream" uid="uid://duosg2q08ocfq" path="res://KILLAWAR_recursos/sounds/muelle.wav" id="3_4003a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mop10"]
+size = Vector2(30, 6)
+
+[node name="plataformaSalto" type="Node2D"]
+script = ExtResource("1_ypjiw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -5)
+texture = ExtResource("2_4003a")
+region_enabled = true
+region_rect = Rect2(16, 16, 32, 9)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_mop10")
+
+[node name="sonidoSalto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_4003a")
+bus = &"SFX"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
