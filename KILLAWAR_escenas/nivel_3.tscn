@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://ekoupbmax23l"]
+[gd_scene load_steps=44 format=3 uid="uid://ekoupbmax23l"]
 
 [ext_resource type="Texture2D" uid="uid://88ise0gdkubj" path="res://KILLAWAR_recursos/sprites/world_tileset.png" id="1_1g6rs"]
 [ext_resource type="PackedScene" uid="uid://dtp8ikfxri7po" path="res://KILLAWAR_escenas/chaska.tscn" id="2_752og"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cg1hiqgbwsapn" path="res://KILLAWAR_escenas/puas_madera.tscn" id="6_cvove"]
 [ext_resource type="PackedScene" uid="uid://bci6ttctm6icg" path="res://KILLAWAR_escenas/moneda.tscn" id="7_8kr2v"]
 [ext_resource type="PackedScene" uid="uid://c0qkhnrd5mnsf" path="res://KILLAWAR_escenas/enemigo_roca.tscn" id="8_8kr2v"]
+[ext_resource type="Script" uid="uid://cw07kndw473lt" path="res://KILLAWAR_codigo/hud.gd" id="9_6moax"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b6tu0"]
 texture = ExtResource("1_1g6rs")
@@ -966,3 +967,13 @@ position = Vector2(4008, -393)
 
 [node name="EnemigoRoca2" parent="rocas" instance=ExtResource("8_8kr2v")]
 position = Vector2(4296, -393)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("9_6moax")
+
+[node name="ContenedorCorazones" type="HBoxContainer" parent="HUD"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 60.0
+scale = Vector2(2.08, 1.116)

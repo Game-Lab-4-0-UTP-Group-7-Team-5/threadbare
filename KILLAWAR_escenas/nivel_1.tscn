@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://dkl2pkqhm008k"]
+[gd_scene load_steps=38 format=3 uid="uid://dkl2pkqhm008k"]
 
 [ext_resource type="Script" uid="uid://bgeb08k7gr21m" path="res://KILLAWAR_codigo/nivel_1.gd" id="1_7jjxr"]
 [ext_resource type="PackedScene" uid="uid://dtp8ikfxri7po" path="res://KILLAWAR_escenas/chaska.tscn" id="1_r4m2x"]
@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://2outhendp2nm" path="res://KILLAWAR_recursos/fonts/PixelOperator8.ttf" id="12_7jjxr"]
 [ext_resource type="Texture2D" uid="uid://gc5elvp846q2" path="res://KILLAWAR_recursos/sprites/flecha.png" id="13_ehagq"]
 [ext_resource type="Texture2D" uid="uid://bwl2ql5sovvq3" path="res://KILLAWAR_recursos/sprites/texto_PANEL.png" id="15_7jjxr"]
+[ext_resource type="Script" uid="uid://cw07kndw473lt" path="res://KILLAWAR_codigo/hud.gd" id="16_ehagq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vpch8"]
 texture = ExtResource("2_abaad")
@@ -868,3 +869,19 @@ theme_override_colors/font_color = Color(0.24, 0.1104, 0.1104, 1)
 theme_override_fonts/font = ExtResource("12_7jjxr")
 theme_override_font_sizes/font_size = 8
 text = "too late."
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("16_ehagq")
+
+[node name="ContenedorCorazones" type="HBoxContainer" parent="HUD"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 60.0
+scale = Vector2(2.08, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0

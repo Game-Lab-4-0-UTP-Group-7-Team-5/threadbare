@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bjpxbha6lsc0i"]
+[gd_scene load_steps=36 format=3 uid="uid://bjpxbha6lsc0i"]
 
 [ext_resource type="Texture2D" uid="uid://88ise0gdkubj" path="res://KILLAWAR_recursos/sprites/world_tileset.png" id="1_db455"]
 [ext_resource type="Texture2D" uid="uid://blcaby2u07nq7" path="res://KILLAWAR_recursos/sprites/puente2.png" id="2_871jb"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c0qkhnrd5mnsf" path="res://KILLAWAR_escenas/enemigo_roca.tscn" id="6_xmueq"]
 [ext_resource type="PackedScene" uid="uid://cxsvrh81u2con" path="res://KILLAWAR_escenas/plataforma_2.tscn" id="12_xm153"]
 [ext_resource type="PackedScene" uid="uid://ddejmqqoskt2h" path="res://KILLAWAR_escenas/plataforma_salto.tscn" id="14_qh346"]
+[ext_resource type="Script" uid="uid://cw07kndw473lt" path="res://KILLAWAR_codigo/hud.gd" id="15_wtghk"]
 [ext_resource type="PackedScene" uid="uid://bjaij0ekcuckc" path="res://KILLAWAR_escenas/parallax_3.tscn" id="18_oy3ve"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vpch8"]
@@ -608,3 +609,13 @@ position = Vector2(-83, -10)
 
 [node name="plataformaSalto" parent="." instance=ExtResource("14_qh346")]
 position = Vector2(779, -110)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("15_wtghk")
+
+[node name="ContenedorCorazones" type="HBoxContainer" parent="HUD"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 60.0
+scale = Vector2(2.08, 1)
