@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dic2a3vh5f5e6"]
+
+[ext_resource type="Script" uid="uid://cw07kndw473lt" path="res://KILLAWAR_codigo/hud.gd" id="1_0ua0t"]
+[ext_resource type="Texture2D" uid="uid://duchotjcknp8w" path="res://KILLAWAR_recursos/sprites/Tumii1.png" id="2_m4q75"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_0ua0t")
+
+[node name="ContenedorTumis" type="HBoxContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_top = 20.0
+offset_bottom = 60.0
+grow_horizontal = 0
+theme_override_constants/separation = 10
+
+[node name="TextoNivel" type="Label" parent="ContenedorTumis"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Nivel "
+
+[node name="IconoTumi" type="TextureRect" parent="ContenedorTumis"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("2_m4q75")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextoTumis" type="Label" parent="ContenedorTumis"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="ContenedorCorazones" type="HBoxContainer" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 60.0
+scale = Vector2(2.08, 1)
