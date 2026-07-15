@@ -25,6 +25,7 @@ Settings="*res://scenes/globals/settings/settings.gd"
 PauseOverlay="*res://scenes/globals/pause/pause_overlay.tscn"
 MusicPlayer="*res://scenes/globals/music_player/music_player.tscn"
 CameraShake="*res://scenes/globals/camera_shaker/camera_shake.tscn"
+Global="*res://KILLAWAR_codigo/Global.gd"
 
 [debug]
 
@@ -43,8 +44,8 @@ editor/translations/update_pot_files_automatically=false
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
+window/size/viewport_width=1500
+window/size/viewport_height=800
 window/stretch/mode="viewport"
 
 [editor_plugins]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duchotjcknp8w"
-path="res://.godot/imported/Tumii1.png-0df05f88b211ad74eb75df4ed8f03211.ctex"
+uid="uid://1up4drurehsa"
+path="res://.godot/imported/far-mountains.png-70b1b307b93439d1ebf6d5889543be68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://KILLAWAR_recursos/sprites/Tumii1.png"
-dest_files=["res://.godot/imported/Tumii1.png-0df05f88b211ad74eb75df4ed8f03211.ctex"]
+source_file="res://KILLAWAR_recursos/sprites/far-mountains.png"
+dest_files=["res://.godot/imported/far-mountains.png-70b1b307b93439d1ebf6d5889543be68.ctex"]
 
 [params]
 

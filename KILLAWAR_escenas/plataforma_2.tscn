@@ -1,11 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxsvrh81u2con"]
+[gd_scene load_steps=5 format=3 uid="uid://cxsvrh81u2con"]
 
+[ext_resource type="Script" uid="uid://yfibsi5w755v" path="res://KILLAWAR_codigo/plataforma_2.gd" id="1_edfeq"]
 [ext_resource type="Texture2D" uid="uid://cp7728g3vfic4" path="res://KILLAWAR_recursos/sprites/platforms.png" id="1_hisjm"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwmft"]
+size = Vector2(32, 2)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_edfeq"]
-size = Vector2(30, 8.14063)
+size = Vector2(30, 5.07031)
 
 [node name="Plataforma2" type="AnimatableBody2D"]
+script = ExtResource("1_edfeq")
+
+[node name="ZonaSalto" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaSalto"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_mwmft")
+one_way_collision = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_hisjm")
@@ -13,5 +25,8 @@ region_enabled = true
 region_rect = Rect2(16, 16, 32, 9)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.53516)
 shape = SubResource("RectangleShape2D_edfeq")
 one_way_collision = true
+
+[connection signal="body_entered" from="ZonaSalto" to="." method="_on_zona_salto_body_entered"]
