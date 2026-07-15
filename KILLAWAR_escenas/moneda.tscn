@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://bci6ttctm6icg"]
 
 [ext_resource type="Script" uid="uid://b7xxauriphahf" path="res://KILLAWAR_codigo/moneda.gd" id="1_ioh0g"]
-[ext_resource type="Texture2D" uid="uid://duchotjcknp8w" path="res://KILLAWAR_recursos/sprites/Tumii1.png" id="2_fw8ar"]
+[ext_resource type="Texture2D" uid="uid://duchotjcknp8w" path="res://KILLAWAR_escenas/Tumii1.png" id="2_fw8ar"]
 [ext_resource type="Texture2D" uid="uid://ccdk1bka0aht" path="res://KILLAWAR_recursos/sprites/Tumii2.png" id="3_e6524"]
 [ext_resource type="Texture2D" uid="uid://cgpcrr8ghty8y" path="res://KILLAWAR_recursos/sprites/Tumii3.png" id="4_0egy3"]
 [ext_resource type="Texture2D" uid="uid://dwn1oprquj6d2" path="res://KILLAWAR_recursos/sprites/Tumii4.png" id="5_w2xby"]

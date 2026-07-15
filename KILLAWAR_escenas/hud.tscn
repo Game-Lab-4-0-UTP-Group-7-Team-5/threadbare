@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dic2a3vh5f5e6"]
 
 [ext_resource type="Script" uid="uid://cw07kndw473lt" path="res://KILLAWAR_codigo/hud.gd" id="1_0ua0t"]
-[ext_resource type="Texture2D" uid="uid://duchotjcknp8w" path="res://KILLAWAR_recursos/sprites/Tumii1.png" id="2_m4q75"]
+[ext_resource type="Texture2D" uid="uid://duchotjcknp8w" path="res://KILLAWAR_escenas/Tumii1.png" id="2_m4q75"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_0ua0t")
